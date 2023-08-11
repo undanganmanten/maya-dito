@@ -83,7 +83,7 @@ body {
 }
 
 .modal-content{
-    background: url("../assets/images/gallery/cover.JPG");
+    background: url("../assets/images/gallery/cover-desktop.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1465,6 +1465,11 @@ aside img{
   aside {
     display: none;
   }
-  
+  .modal-content{
+    background: url("../assets/images/gallery/cover.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 }
 /*===== // Resonsive Vertical Timeline =====*/
