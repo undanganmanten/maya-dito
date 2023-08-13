@@ -98,11 +98,11 @@ const play = (btn) => {
     if (!isPlay) {
         btn.setAttribute('data-status', 'true');
         audio.play();
-        btn.innerHTML = '<i class="fa-solid fa-circle-pause" style="color:#b29884"></i>';
+        btn.innerHTML = '<i class="fa-solid fa-circle-pause" style="color:#d78c90"></i>';
     } else {
         btn.setAttribute('data-status', 'false');
         audio.pause();
-        btn.innerHTML = '<i class="fa-solid fa-circle-play" style="color:#b29884"></i>';
+        btn.innerHTML = '<i class="fa-solid fa-circle-play" style="color:#d78c90"></i>';
     }
 };
 
@@ -369,7 +369,7 @@ function create_unfinished_task(){
                 presentHadir += 1;
             }else if(task_hadir==="Tidak Hadir"){
                 presentTidakHadir += 1;
-            }else{
+            }else {
                 presentRagu += 1;
             }
 
