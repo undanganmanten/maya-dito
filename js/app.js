@@ -369,7 +369,7 @@ function create_unfinished_task(){
                 presentHadir += 1;
             }else if(task_hadir==="Tidak Hadir"){
                 presentTidakHadir += 1;
-            }else {
+            }else if(task_hadir==="Masih Ragu"){
                 presentRagu += 1;
             }
 
