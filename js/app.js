@@ -351,9 +351,9 @@ function create_unfinished_task(){
     task_array = [];
     firebase.database().ref("mayadito").once('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-        var childKey = childSnapshot.key;
-        var childData = childSnapshot.val();
-        task_array.push(Object.values(childData));
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+            task_array.push(Object.values(childData));
         });
         for(var i, i = 0; i < task_array.length; i++){
             task_date = task_array[i][0];
@@ -364,7 +364,7 @@ function create_unfinished_task(){
             task_container = document.createElement("div");
             task_container.setAttribute("class", "task_container");
             task_container.setAttribute("data-key", task_key);
-        
+
             if(task_hadir==="Hadir"){
                 presentHadir += 1;
             }else if(task_hadir==="Tidak Hadir"){
